@@ -18,7 +18,7 @@ def main():
 
     for r in range(0, size):
         temp = weather_information[r]["temperature"]
-        sum_temp += temp
+        sum_temp = sum_temp + temp
 
     ave_temp = sum_temp / size
     print(ave_temp)
@@ -27,10 +27,10 @@ def main():
 
     i = 0
     for r in range(0, size):
-        i = i + 1
+        # i = i + 1
         if weather_information[r]["prefecture"] == "大阪府":
-            if i == 1:
-                print("'", end="")
+            # if i == 1:
+            #   print("'", end="")
 
             print(weather_information[r]["station"], end=",")
 
